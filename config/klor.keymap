@@ -90,18 +90,18 @@ label= "LOWER"                                                 ;
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
              │    1    │    2    │    3    │    4    │    5    │                    │    6    │    7    │    8    │    9    │    0    │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │         │         │   LEFT  │  DOWN   │  RIGHT  │    [    │                    │  LEFT   │   UP    │  DOWN   │  RIGHT  │         │         │
+   │         │         │         │         │         │         │                    │  LEFT   │   UP    │  DOWN   │  RIGHT  │         │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │   P UP  │ C LOCK  │ P DOWN  │    (    ││        ││        ││    )    │    1    │    2    │    3    │    *    │         │
+   │         │         │         │         │         │         ││        ││        ││         │ PG UP   │ PG DOWN │         │         │         │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                 │         │         │         │         ││         │         │    0    │         │  
+                                 │         │         │         │         ││         │         │         │         │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */  
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
               &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_N4 &kp KP_N5                      &kp KP_N6 &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_N0
     &trans    &trans    &trans    &trans    &trans    &trans                         &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &trans    &trans
-    &trans    &trans    &kp PG_UP &kp CAPS  &kp PG_DN &kp LPAR  &trans     &trans    &kp RPAR  &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MULTIPLY &trans
-                                  &trans    &trans    &trans    &trans     &trans    &kp DELETE &kp KP_N0 &trans  
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans     &trans    &trans    &kp PG_UP &kp PG_DN &trans    &trans    &trans
+                                  &trans    &trans    &trans    &trans     &trans    &trans    &trans    &trans  
 
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
              │         │         │    UP   │         │    {    │                    │    }    │    7    │    8    │    9    │    +    │
