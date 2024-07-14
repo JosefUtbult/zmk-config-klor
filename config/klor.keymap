@@ -80,7 +80,21 @@ label= "BASE"                                                  ;
   sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 };
 
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+/* /1           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐ */
+            /*  │    Q    │    W    │    F    │    P    │    G    │                    │    J    │    L    │    U    │    Y    │    ;    │ */   
+   /* ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐ */
+   /* │   TAB   │    A    │    R    │    S    │    T    │    D    │                    │    H    │    N    │    E    │    I    │    O    │    "    │ */
+   /* ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤ */
+   /* │   DEL   │    Z    │    X    │    C    │    V    │    B    ││  MUTE  ││PLY/PSE ││    K    │    M    │    ,    │    .    │    /    │    \    │ */
+   /* └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘ */
+            /*                      │  CTRL   │  LOWER  │  SPACE  │   ALT   ││ CMD/WIN │  ENTER  │  RAISE  │  BSPCE  │ */  
+            /*                      └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ *1/ */ 
+ /* bindings = < */
+ /* //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷ */
+            /*   &kp Q     &kp W     &kp F     &kp P     &kp G                          &kp J     &kp L     &kp U     &kp Y     &kp SEMI */
+    /* &kp TAB   &kp A     &kp R     &kp S   &hm LSHFT T &kp D                          &kp H   &hm RSHFT N &kp E     &kp I     &kp O     &kp SQT */
+    /* &kp DEL   &kp Z     &kp X     &kp C     &kp V     &kp B     &trans     &trans    &kp K     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp BSLH */
+            /*                       &kp LCTRL &mo LOWER &kp SPACE &kp LALT   &kp LGUI  &kp RET   &mo RAISE &kp BSPC */
 
 
 lower_layer {
@@ -138,10 +152,10 @@ label= "RAISE"                                                 ;
                                  │ ADJUST  │         │         │         ││         │         │         │         │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <
- //╷         ╷         ╷         ╷          ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
-              &trans    &trans    &trans     &trans    &trans                         &trans    &trans    &trans    &trans    &trans     
-    &kp RA(A) &trans    &kp RA(S) &trans     &trans    &trans                         &trans    &trans    &trans    &trans    &kp RA([) &trans  
-    &trans    &trans    &trans    &trans     &trans    &trans    &trans     &trans    &trans    &trans    &trans    &kp RA(;) &kp RA(') &trans
+ //╷         ╷         ╷         ╷          ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷            ╷            ╷         ╷
+              &trans    &trans    &trans     &trans    &trans                         &trans    &trans    &trans    &trans       &trans     
+    &trans    &trans    &kp RA(S) &trans     &trans    &trans                         &trans    &trans    &trans    &trans       &kp RA(SQT)  &trans  
+    &trans    &trans    &trans    &trans     &trans    &trans    &trans     &trans    &trans    &trans    &trans    &kp RA(SEMI) &kp RA(LBKT) &trans
                                   &mo ADJUST &trans    &trans    &trans     &trans    &trans    &trans    &trans  
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
