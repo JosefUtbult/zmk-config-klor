@@ -122,7 +122,7 @@ label= "RAISE"                                                 ;
  //╷         ╷         ╷        ╷          ╷         ╷         ╷         ╷╷         ╷         ╷               ╷         ╷          ╷            ╷         ╷
               &trans    &trans   &trans     &trans    &trans                         &trans    &trans          &trans    &trans     &kp RA(SQT)      
     &trans    &trans    &trans   &trans     &kp LALT  &kp TAB                        &kp LEFT  &kp DOWN        &kp UP    &kp RIGHT  &kp RA(LBKT) &trans  
-    &trans    &trans    &trans   &trans     &LSHFT    &trans    &trans     &trans    &kp HOME  &hm RSHFT PG_DN &kp PG_UP &kp END    &kp RA(SEMI) &trans
+    &trans    &trans    &trans   &trans     &kp LSHFT &trans    &trans     &trans    &kp HOME  &hm RSHFT PG_DN &kp PG_UP &kp END    &kp RA(SEMI) &trans
                                  &mo ADJUST &trans    &trans    &trans     &trans    &trans    &trans          &trans  
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
