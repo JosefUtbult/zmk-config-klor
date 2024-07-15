@@ -68,14 +68,14 @@ label= "BASE"                                                  ;
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
    │         │    Z    │    X    │    C    │    V    │    B    ││  MUTE  ││PLY/PSE ││    N    │    M    │    ,    │    .    │    /    │         │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                 │  ENTER  │  LOWER  │  CTRL   │   ESC   ││ CMD/WIN │  SPACE  │  RAISE  │  BSPCE  │  
+                                 │  CTRL   │  LOWER  │  ENTER  │   ESC   ││ CMD/WIN │  SPACE  │  RAISE  │  BSPCE  │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <    
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷          ╷         ╷         ╷         ╷         ╷         ╷         ╷
               &kp Q     &kp W     &kp E     &kp R     &kp T                           &kp Y     &kp U     &kp I     &kp O     &kp P
     &trans    &kp A     &kp S     &kp D     &kp F     &kp G                           &kp H     &kp J     &kp K     &kp L     &kp SEMI  &trans
     &trans    &kp Z     &kp X     &kp C   &hm LSHFT V &kp B     &trans      &trans    &kp N   &hm RSHFT M &kp COMMA &kp DOT   &kp FSLH  &trans
-                                  &kp RET   &mo LOWER &kp LCTRL &kp ESC     &kp LGUI  &kp SPACE &mo RAISE &kp BSPC    
+                                  &kp LCTRL &mo LOWER &kp RET   &kp ESC     &kp LGUI  &kp SPACE &mo RAISE &kp BSPC    
   >;
   sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 };
