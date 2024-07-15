@@ -24,8 +24,8 @@
 #define BASE   0
 #define LOWER  1
 #define RAISE  2
-#define ADJUST 3
-#define MIDDLE 4
+#define MIDDLE 3
+#define ADJUST 4
 
 
 / {
