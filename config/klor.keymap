@@ -110,19 +110,19 @@ bindings = <
 label= "RAISE"                                                 ;
 // └───────────────────────────────────────────────────────────┘
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-             │         │         │         │         │   TAB   │                    │         │         │         │         │    Å    │
+             │         │         │         │         │         │                    │         │         │         │         │    Å    │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │         │         │         │         │         │ ALT+TAB │                    │   LEFT  │  DOWN   │   UP    │  RIGHT  │    Ä    │         │
+   │         │         │         │         │   ALT   │   TAB   │                    │   LEFT  │  DOWN   │   UP    │  RIGHT  │    Ä    │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │         │         │         │   ALT   ││        ││        ││   HOME  │  PG DN  │  PG UP  │   END   │    Ö    │         │
+   │         │         │         │         │         │         ││        ││        ││   HOME  │  PG DN  │  PG UP  │   END   │    Ö    │         │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                  │ ADJUST  │         │         │         ││         │         │         │         │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <
  //╷         ╷         ╷        ╷          ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷          ╷            ╷         ╷
-              &trans    &trans   &trans     &trans    &kp TAB                        &trans    &trans    &trans    &trans     &kp RA(SQT)      
-    &trans    &trans    &trans   &trans     &trans    &kp LA(TAB)                    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp RA(LBKT) &trans  
-    &trans    &trans    &trans   &trans     &trans    &kp LALT  &trans     &trans    &kp HOME  &kp PG_DN &kp PG_UP &kp END    &kp RA(SEMI) &trans
+              &trans    &trans   &trans     &trans    &trans                         &trans    &trans    &trans    &trans     &kp RA(SQT)      
+    &trans    &trans    &trans   &trans     &kp LALT  &kp TAB                        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp RA(LBKT) &trans  
+    &trans    &trans    &trans   &trans     &trans    &trans    &trans     &trans    &kp HOME  &kp PG_DN &kp PG_UP &kp END    &kp RA(SEMI) &trans
                                  &mo ADJUST &trans    &trans    &trans     &trans    &trans    &trans    &trans  
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
