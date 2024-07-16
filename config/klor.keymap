@@ -159,20 +159,20 @@ label= "MIDDLE"                                                ;
 label= "ADJUST"                                                ;
 // └───────────────────────────────────────────────────────────┘
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-             │         │         │         │         │         │                    │         │         │         │         │         │
+             │ BLT CLR │         │         │         │         │                    │         │  BLT 6  │  BLT 7  │  BLT 8  │         │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │         │         │         │         │         │         │                    │         │         │         │         │         │         │
+   │         │ BLT NXT │         │         │         │         │                    │         │  BLT 3  │  BLT 4  │  BLT 5  │         │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │         │         │         │         ││        ││        ││         │         │         │         │         │         │
+   │         │ PLT PRV │         │         │         │         ││        ││        ││         │  BLT 0  │  BLT 1  │  BLT 2  │         │         │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                  │         │         │         │         ││         │         │         │         │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <
- //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
-             &bt BT_CLR &trans    &trans    &trans    &trans                         &trans    &trans    &trans    &trans    &bt BT_CLR   
-    &trans   &bt BT_NXT &trans    &trans    &trans    &trans                         &trans    &trans    &trans    &bt BT_NXT &trans   &trans 
-    &trans   &bt BT_PRV &trans    &trans    &kp KP_N6 &trans    &trans     &trans    &bt BT_PRV &trans   &trans    &trans    &trans    &trans    
-                                  &trans    &trans    &trans    &trans     &trans    &trans    &trans    &trans    
+ //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷          ╷          ╷          ╷         ╷         ╷
+             &bt BT_CLR &trans    &trans    &trans    &trans                         &trans    &BT_SEL 6  &BT_SEL 7  &BT_SEL 8  &trans   
+    &trans   &bt BT_NXT &trans    &trans    &trans    &trans                         &trans    &BT_SEL 3  &BT_SEL 4  &BT_SEL 5  &trans    &trans 
+    &trans   &bt BT_PRV &trans    &trans    &trans    &trans    &trans     &trans    &trans    &BT_SEL 0  &BT_SEL 1  &BT_SEL 2  &trans    &trans    
+                                  &trans    &trans    &trans    &trans     &trans    &trans    &trans     &trans    
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
